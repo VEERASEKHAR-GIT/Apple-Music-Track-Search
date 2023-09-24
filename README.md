@@ -27,7 +27,7 @@ The script operates as follows:
 Here's an example of how the script's output might look based on a search term (e.g., "Love"):
 
 ```
-- **Search term:** Ar rahman
+Search term: Ar rahman
 - Track: Jai Ho - Artist: A.R. Rahman, Sukhwinder Singh, Tanvi Shah, Mahalakshmi Iyer & Vijay Prakash - Collection: Slumdog Millionaire (Music from the Motion Picture)
 - Track: Tum Se Hi - Artist: Mohit Chauhan - Collection: Jab We Met (Original Motion Picture Soundtrack)
 - Track: Rehna Tu - Artist: A.R. Rahman - Collection: Delhi-6 (Original Motion Picture Soundtrack)
