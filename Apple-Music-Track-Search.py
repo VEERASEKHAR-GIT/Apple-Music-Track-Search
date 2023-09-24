@@ -1,12 +1,21 @@
 import requests
 
 def search_apple_music_tracks():
-    artist_name = input("Enter the artist name: ")
+    # Prompt the user to provide at least one term (artist name, collection name, or track name)
+    print("Please provide at least one of the following:")
+    artist_name = input("Enter the artist name (or leave blank for any artist): ")
     collection_name = input("Enter the collection name (or leave blank for any collection): ")
     track_name = input("Enter the track name (or leave blank for any track): ")
 
+    # Check if at least one term is provided
+    if not (artist_name or collection_name or track_name):
+        print("At least one term (artist name, collection name, or track name) is required.")
+        return
+
     # Construct the search term based on the user inputs
-    search_term = artist_name
+    search_term = ""
+    if artist_name:
+        search_term += f"{artist_name}"
     if collection_name:
         search_term += f"+{collection_name}"
     if track_name:
