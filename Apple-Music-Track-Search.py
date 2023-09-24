@@ -1,3 +1,6 @@
+import requests
+
+def search_apple_music_tracks():
     artist_name = input("Enter the artist name: ")
     collection_name = input("Enter the collection name (or leave blank for any collection): ")
     track_name = input("Enter the track name (or leave blank for any track): ")
@@ -32,3 +35,6 @@
             print("No results found.")
     else:
         print(f"Error: {response.status_code} - {response.text}")
+
+if __name__ == "__main__":
+    search_apple_music_tracks()
