@@ -36,9 +36,12 @@ def search_apple_music_tracks():
         if "results" in data:
             # Extract and print the track names, artist names, and collection names
             for result in data["results"]:
+                # Extract track name, artist name, and collection name from the result
                 track_name_result = result.get("trackName", "{trackName}")
                 artist_name_result = result.get("artistName", "{artistName}")
                 collection_name_result = result.get("collectionName", "{collectionName}")
+                
+                # Print the track details
                 print(f"Track: {track_name_result} - Artist: {artist_name_result} - Collection: {collection_name_result}")
         else:
             print("No results found.")
